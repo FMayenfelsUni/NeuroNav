@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7229F5DE-6119-4466-BF9A-D817D59A5BAA}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>grafica</RootNamespace>
+    <ProjectName>StimTrack</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>Pure</CLRSupport>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>C:\vicra\build\interfaccia\interface;C:\vicra\build\TMSvicra;C:\vicra\source\fltk-1.3.2;C:/vicra/source/IGSTK-5.0/Utilities/SceneGraphVisualization;C:/vicra/source/VTK5.10.1/Views;C:/vicra/source/VTK5.10.1/Geovis;C:/vicra/source/VTK5.10.1/Utilities/vtkalglib;C:/vicra/source/VTK5.10.1/Infovis;C:/vicra/source/VTK5.10.1/Utilities/utf8/source;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5/hl/src;C:/vicra/build/VTK/Utilities/vtkhdf5/hl/src;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5/src;C:/vicra/build/VTK/Utilities/vtkhdf5/src;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5;C:/vicra/build/VTK/Utilities/vtkhdf5;C:/vicra/source/VTK5.10.1/Utilities/verdict;C:/vicra/build/VTK/Utilities/verdict;C:/vicra/source/VTK5.10.1/Utilities/vtkmetaio;C:/vicra/build/VTK/Utilities/vtkmetaio;C:/vicra/source/VTK5.10.1/Utilities/MaterialLibrary;C:/vicra/build/VTK/Utilities/MaterialLibrary;C:/vicra/source/VTK5.10.1/Utilities/LSDyna;C:/vicra/build/VTK/Utilities/LSDyna;C:/vicra/source/VTK5.10.1/Utilities/vtkfreetype/include;C:/vicra/build/VTK/Utilities/vtkfreetype/include;C:/vicra/source/VTK5.10.1/Utilities/DICOMParser;C:/vicra/build/VTK/Utilities/DICOMParser;C:/vicra/source/VTK5.10.1/Utilities/vtklibproj4;C:/vicra/build/VTK/Utilities/vtklibproj4;C:/vicra/source/VTK5.10.1/Utilities/vtknetcdf/include;C:/vicra/source/VTK5.10.1/Utilities/vtknetcdf;C:/vicra/build/VTK/Utilities/vtknetcdf;C:/vicra/source/VTK5.10.1/Common/Testing/Cxx;C:/vicra/source/VTK5.10.1/Utilities;C:/vicra/source/VTK5.10.1/Common;C:/vicra/source/VTK5.10.1/Filtering;C:/vicra/source/VTK5.10.1/GenericFiltering;C:/vicra/source/VTK5.10.1/Graphics;C:/vicra/source/VTK5.10.1/Imaging;C:/vicra/source/VTK5.10.1/IO;C:/vicra/source/VTK5.10.1/Rendering/Testing/Cxx;C:/vicra/source/VTK5.10.1/Chemistry;C:/vicra/source/VTK5.10.1/Charts;C:/vicra/source/VTK5.10.1/Rendering;C:/vicra/source/VTK5.10.1/Widgets;C:/vicra/source/VTK5.10.1/Hybrid;C:/vicra/source/VTK5.10.1/VolumeRendering;C:/vicra/build/VTK/Utilities/vtkalglib;C:/vicra/build/VTK/Chemistry;C:/vicra/build/VTK/Charts;C:/vicra/build/VTK/Rendering;C:/vicra/build/VTK/VolumeRendering;C:/vicra/build/VTK/Utilities;C:/vicra/build/VTK/Common;C:/vicra/build/VTK;C:/vicra/source/InsightToolkit-3.20.1/Utilities/gdcm/src;C:/vicra/build/ITK/Utilities/gdcm;C:/vicra/build/ITK/Utilities/vxl/core;C:/vicra/build/ITK/Utilities/vxl/vcl;C:/vicra/build/ITK/Utilities/vxl/v3p/netlib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/core;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/vcl;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/Statistics;C:/vicra/source/InsightToolkit-3.20.1/Utilities;C:/vicra/build/ITK/Utilities;C:/vicra/source/InsightToolkit-3.20.1/Utilities/itkExtHdrs;C:/vicra/source/InsightToolkit-3.20.1/Utilities/nifti/znzlib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/nifti/niftilib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/expat;C:/vicra/build/ITK/Utilities/expat;C:/vicra/build/ITK/Utilities/DICOMParser;C:/vicra/source/InsightToolkit-3.20.1/Utilities/DICOMParser;C:/vicra/build/ITK/Utilities/NrrdIO;C:/vicra/source/InsightToolkit-3.20.1/Utilities/NrrdIO;C:/vicra/source/InsightToolkit-3.20.1/Utilities/MetaIO;C:/vicra/source/InsightToolkit-3.20.1/Code/SpatialObject;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/FEM;C:/vicra/source/InsightToolkit-3.20.1/Code/IO;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics;C:/vicra/source/InsightToolkit-3.20.1/Code/Common;C:/vicra/source/InsightToolkit-3.20.1/Code/BasicFilters;C:/vicra/source/InsightToolkit-3.20.1/Code/Algorithms;C:/vicra/build/ITK;C:/vicra/build/IGSTK/Testing;C:/vicra/source/IGSTK-5.0/Testing;C:/vicra/build/IGSTK/Source;C:/vicra/source/IGSTK-5.0/Source;C:/vicra/build/IGSTK;C:/vicra/source/IGSTK-5.0/Examples/TransformReaders;C:/vicra/source/IGSTK-5.0/Examples/TransformWriters;C:/vicra/source/IGSTK-5.0/Examples/TrackerConfiguration;C:/vicra/source/IGSTK-5.0/Examples/TrackerConfiguration/configurationFileReaders;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>	fltkgl.lib;	fltkjpeg.lib;	fltkpng.lib;	fltkforms.lib;	fltkimages.lib;	fltkzlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;IGSTK.lib;TrackerConfiguration.lib;TransformReaders.lib;TransformWriters.lib;SceneGraphVisualization.lib;IGSTK.lib;ITKIO.lib;ITKNrrdIO.lib;itkgdcm.lib;itkjpeg12.lib;itkjpeg16.lib;itkopenjpeg.lib;snmpapi.lib;rpcrt4.lib;itkpng.lib;itktiff.lib;itkjpeg8.lib;ITKDICOMParser.lib;ITKEXPAT.lib;ITKniftiio.lib;ITKznz.lib;ITKBasicFilters.lib;ITKNumerics.lib;ITKSpatialObject.lib;ITKCommon.lib;itkvnl_inst.lib;itkvnl_algo.lib;itkv3p_netlib.lib;itkvnl.lib;itkvcl.lib;itkv3p_lsqr.lib;ITKMetaIO.lib;itksys.lib;itkzlib.lib;C:\vicra\build\VTK\bin\Release\vtkHybrid.lib;C:\vicra\build\VTK\bin\Release\vtkRendering.lib;C:\vicra\build\VTK\bin\Release\vtkGraphics.lib;C:\vicra\build\VTK\bin\Release\vtkverdict.lib;C:\vicra\build\VTK\bin\Release\vtkftgl.lib;C:\vicra\build\VTK\bin\Release\vtkfreetype.lib;opengl32.lib;C:\vicra\build\VTK\bin\Release\vtkexoIIc.lib;C:\vicra\build\VTK\bin\Release\vtkImaging.lib;C:\vicra\build\VTK\bin\Release\vtkIO.lib;vfw32.lib;C:\vicra\build\VTK\bin\Release\vtkDICOMParser.lib;C:\vicra\build\VTK\bin\Release\vtkNetCDF_cxx.lib;C:\vicra\build\VTK\bin\Release\vtkNetCDF.lib;C:\vicra\build\VTK\bin\Release\vtkhdf5_hl.lib;C:\vicra\build\VTK\bin\Release\vtkhdf5.lib;C:\vicra\build\VTK\bin\Release\LSDyna.lib;C:\vicra\build\VTK\bin\Release\vtkmetaio.lib;comctl32.lib;C:\vicra\build\VTK\bin\Release\vtksqlite.lib;C:\vicra\build\VTK\bin\Release\vtkpng.lib;C:\vicra\build\VTK\bin\Release\vtktiff.lib;C:\vicra\build\VTK\bin\Release\vtkzlib.lib;C:\vicra\build\VTK\bin\Release\vtkjpeg.lib;C:\vicra\build\VTK\bin\Release\vtkexpat.lib;C:\vicra\build\VTK\bin\Release\vtkFiltering.lib;C:\vicra\build\VTK\bin\Release\vtkCommon.lib;wsock32.lib;C:\vicra\build\VTK\bin\Release\vtksys.lib;ws2_32.lib;TransformReaders.lib;SceneGraphVisualization.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalLibraryDirectories>C:/vicra/build/IGSTK/bin;C:/vicra/build/IGSTK/bin/$(Configuration);;C:/vicra/build/ITK/bin;C:/vicra/build/ITK/bin/$(Configuration);;C:/vicra/build/VTK/bin;C:/vicra/build/VTK/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>C:/vicra/build/TMSvicra/Release/TMSvicra.lib</ImportLibrary>
+      <ProgramDatabaseFile>C:\vicra\build\interfaccia\interface\Release\interface.pdb</ProgramDatabaseFile>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\National Instruments\NI-DAQ\DAQmx ANSI C Dev\lib\msvc;C:\Program Files (x86)\National Instruments\NI-DAQ\DAQmx ANSI C Dev\include;C:\vicra\source\fltk-1.3.2;C:/vicra/source/IGSTK-5.0/Utilities/SceneGraphVisualization;C:/vicra/source/VTK5.10.1/Views;C:/vicra/source/VTK5.10.1/Geovis;C:/vicra/source/VTK5.10.1/Utilities/vtkalglib;C:/vicra/source/VTK5.10.1/Infovis;C:/vicra/source/VTK5.10.1/Utilities/utf8/source;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5/hl/src;C:/vicra/build/VTK/Utilities/vtkhdf5/hl/src;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5/src;C:/vicra/build/VTK/Utilities/vtkhdf5/src;C:/vicra/source/VTK5.10.1/Utilities/vtkhdf5;C:/vicra/build/VTK/Utilities/vtkhdf5;C:/vicra/source/VTK5.10.1/Utilities/verdict;C:/vicra/build/VTK/Utilities/verdict;C:/vicra/source/VTK5.10.1/Utilities/vtkmetaio;C:/vicra/build/VTK/Utilities/vtkmetaio;C:/vicra/source/VTK5.10.1/Utilities/MaterialLibrary;C:/vicra/build/VTK/Utilities/MaterialLibrary;C:/vicra/source/VTK5.10.1/Utilities/LSDyna;C:/vicra/build/VTK/Utilities/LSDyna;C:/vicra/source/VTK5.10.1/Utilities/vtkfreetype/include;C:/vicra/build/VTK/Utilities/vtkfreetype/include;C:/vicra/source/VTK5.10.1/Utilities/DICOMParser;C:/vicra/build/VTK/Utilities/DICOMParser;C:/vicra/source/VTK5.10.1/Utilities/vtklibproj4;C:/vicra/build/VTK/Utilities/vtklibproj4;C:/vicra/source/VTK5.10.1/Utilities/vtknetcdf/include;C:/vicra/source/VTK5.10.1/Utilities/vtknetcdf;C:/vicra/build/VTK/Utilities/vtknetcdf;C:/vicra/source/VTK5.10.1/Common/Testing/Cxx;C:/vicra/source/VTK5.10.1/Utilities;C:/vicra/source/VTK5.10.1/Common;C:/vicra/source/VTK5.10.1/Filtering;C:/vicra/source/VTK5.10.1/GenericFiltering;C:/vicra/source/VTK5.10.1/Graphics;C:/vicra/source/VTK5.10.1/Imaging;C:/vicra/source/VTK5.10.1/IO;C:/vicra/source/VTK5.10.1/Rendering/Testing/Cxx;C:/vicra/source/VTK5.10.1/Chemistry;C:/vicra/source/VTK5.10.1/Charts;C:/vicra/source/VTK5.10.1/Rendering;C:/vicra/source/VTK5.10.1/Widgets;C:/vicra/source/VTK5.10.1/Hybrid;C:/vicra/source/VTK5.10.1/VolumeRendering;C:/vicra/build/VTK/Utilities/vtkalglib;C:/vicra/build/VTK/Chemistry;C:/vicra/build/VTK/Charts;C:/vicra/build/VTK/Rendering;C:/vicra/build/VTK/VolumeRendering;C:/vicra/build/VTK/Utilities;C:/vicra/build/VTK/Common;C:/vicra/build/VTK;C:/vicra/source/InsightToolkit-3.20.1/Utilities/gdcm/src;C:/vicra/build/ITK/Utilities/gdcm;C:/vicra/build/ITK/Utilities/vxl/core;C:/vicra/build/ITK/Utilities/vxl/vcl;C:/vicra/build/ITK/Utilities/vxl/v3p/netlib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/core;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/vcl;C:/vicra/source/InsightToolkit-3.20.1/Utilities/vxl/v3p/netlib;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/Statistics;C:/vicra/source/InsightToolkit-3.20.1/Utilities;C:/vicra/build/ITK/Utilities;C:/vicra/source/InsightToolkit-3.20.1/Utilities/itkExtHdrs;C:/vicra/source/InsightToolkit-3.20.1/Utilities/nifti/znzlib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/nifti/niftilib;C:/vicra/source/InsightToolkit-3.20.1/Utilities/expat;C:/vicra/build/ITK/Utilities/expat;C:/vicra/build/ITK/Utilities/DICOMParser;C:/vicra/source/InsightToolkit-3.20.1/Utilities/DICOMParser;C:/vicra/build/ITK/Utilities/NrrdIO;C:/vicra/source/InsightToolkit-3.20.1/Utilities/NrrdIO;C:/vicra/source/InsightToolkit-3.20.1/Utilities/MetaIO;C:/vicra/source/InsightToolkit-3.20.1/Code/SpatialObject;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/NeuralNetworks;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics/FEM;C:/vicra/source/InsightToolkit-3.20.1/Code/IO;C:/vicra/source/InsightToolkit-3.20.1/Code/Numerics;C:/vicra/source/InsightToolkit-3.20.1/Code/Common;C:/vicra/source/InsightToolkit-3.20.1/Code/BasicFilters;C:/vicra/source/InsightToolkit-3.20.1/Code/Algorithms;C:/vicra/build/ITK;C:/vicra/build/IGSTK/Testing;C:/vicra/source/IGSTK-5.0/Testing;C:/vicra/build/IGSTK/Source;C:/vicra/source/IGSTK-5.0/Source;C:/vicra/build/IGSTK;C:/vicra/source/IGSTK-5.0/Examples/TransformReaders;C:/vicra/source/IGSTK-5.0/Examples/TransformWriters;C:/vicra/source/IGSTK-5.0/Examples/TrackerConfiguration;C:/vicra/source/IGSTK-5.0/Examples/TrackerConfiguration/configurationFileReaders;C:\vicra\build\interfaccia\StimTrack;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>true</CompileAsManaged>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;IGSTK.lib;TrackerConfiguration.lib;TransformReaders.lib;TransformWriters.lib;SceneGraphVisualization.lib;ITKIO.lib;ITKNrrdIO.lib;itkgdcm.lib;itkjpeg12.lib;itkjpeg16.lib;itkopenjpeg.lib;snmpapi.lib;rpcrt4.lib;itkpng.lib;itktiff.lib;itkjpeg8.lib;ITKDICOMParser.lib;ITKEXPAT.lib;ITKniftiio.lib;ITKznz.lib;ITKBasicFilters.lib;ITKNumerics.lib;ITKSpatialObject.lib;ITKCommon.lib;itkvnl_inst.lib;itkvnl_algo.lib;itkv3p_netlib.lib;itkvnl.lib;itkvcl.lib;itkv3p_lsqr.lib;ITKMetaIO.lib;itksys.lib;itkzlib.lib;C:\vicra\build\VTK\bin\Release\vtkHybrid.lib;C:\vicra\build\VTK\bin\Release\vtkRendering.lib;C:\vicra\build\VTK\bin\Release\vtkGraphics.lib;C:\vicra\build\VTK\bin\Release\vtkverdict.lib;C:\vicra\build\VTK\bin\Release\vtkftgl.lib;C:\vicra\build\VTK\bin\Release\vtkfreetype.lib;opengl32.lib;C:\vicra\build\VTK\bin\Release\vtkexoIIc.lib;C:\vicra\build\VTK\bin\Release\vtkImaging.lib;C:\vicra\build\VTK\bin\Release\vtkIO.lib;vfw32.lib;C:\vicra\build\VTK\bin\Release\vtkDICOMParser.lib;C:\vicra\build\VTK\bin\Release\vtkNetCDF_cxx.lib;C:\vicra\build\VTK\bin\Release\vtkNetCDF.lib;C:\vicra\build\VTK\bin\Release\vtkhdf5_hl.lib;C:\vicra\build\VTK\bin\Release\vtkhdf5.lib;C:\vicra\build\VTK\bin\Release\LSDyna.lib;C:\vicra\build\VTK\bin\Release\vtkmetaio.lib;comctl32.lib;C:\vicra\build\VTK\bin\Release\vtksqlite.lib;C:\vicra\build\VTK\bin\Release\vtkpng.lib;C:\vicra\build\VTK\bin\Release\vtktiff.lib;C:\vicra\build\VTK\bin\Release\vtkzlib.lib;C:\vicra\build\VTK\bin\Release\vtkjpeg.lib;C:\vicra\build\VTK\bin\Release\vtkexpat.lib;C:\vicra\build\VTK\bin\Release\vtkFiltering.lib;C:\vicra\build\VTK\bin\Release\vtkCommon.lib;wsock32.lib;C:\vicra\build\VTK\bin\Release\vtksys.lib;ws2_32.lib;NIDAQmx.lib</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\National Instruments\NI-DAQ\DAQmx ANSI C Dev\lib\msvc;C:/vicra/build/IGSTK/bin;C:/vicra/build/IGSTK/bin/$(Configuration);C:/vicra/build/ITK/bin;C:/vicra/build/ITK/bin/$(Configuration);C:/vicra/build/VTK/bin;C:/vicra/build/VTK/bin/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="*Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="*System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="*System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="*System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.ico" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="LoadCalibrCOIL.txt" />
+    <None Include="LoadCalibrHEAD.txt" />
+    <None Include="LoadHotSpot.txt" />
+    <None Include="LoadQualityCalibrHead.txt" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="StimTrack.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\National Instruments\NI-DAQ\DAQmx ANSI C Dev\include\NIDAQmx.h" />
+    <ClInclude Include="..\..\..\..\..\Users\stefano\Desktop\tesi\SignalFromPC\TCP-IP\VCPP_TCP_Socket\TCP_Socket\TCP_SocketTestServer\resource.h" />
+    <ClInclude Include="..\..\..\..\..\Users\stefano\Desktop\working\Serial.h" />
+    <ClInclude Include="..\registers.h" />
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="test.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resX">
+      <DependentUpon>Form1.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

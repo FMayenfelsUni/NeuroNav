@@ -1,0 +1,21 @@
+#
+# Position Sensor 0 P9-11701   FW Version: 008.006.019
+#
+    Info.Connections.Address.15=131.246.110.186
+    Info.Connections.Port.15=49265
+    Info.Connections.Rx Bytes.15=8411
+    Info.Connections.Tx Bytes.15=1733013
+    Info.Connections.Requests.15=238
+    Info.Connections.Replies.15=15935
+    Info.Connections.Streams.15=2
+    Info.Connections.isMaster.15=1
+    Info.Connections.isAuth.15=0
+
+
+Firewall x
+Tried Ports: 49265, 5960, 8765, 51366
+
+
+
+-> connection via serial port.
+-> imitate NDI Tracker Tool (Log File)
